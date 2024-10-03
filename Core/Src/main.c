@@ -101,10 +101,9 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
-  HAL_TIM_Base_Start(&htim1);
-  HAL_TIM_Base_Start_IT(&htim3);
   Ds18b20_Init_Simple();
+  HAL_TIM_Base_Start_IT(&htim3);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
